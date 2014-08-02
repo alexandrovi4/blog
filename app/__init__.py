@@ -1,5 +1,4 @@
 __author__ = 'kirill'
-
 from flask import Flask
 
 app = Flask(__name__)

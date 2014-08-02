@@ -2,3 +2,5 @@ virtualenv.py
 virtualenv.pyc
 .idea/
 flask/
+views.pyc
+__init__.pyc
