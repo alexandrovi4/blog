@@ -1,0 +1,4 @@
+virtualenv.py
+virtualenv.pyc
+.idea/
+flask/
