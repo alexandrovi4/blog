@@ -4,3 +4,5 @@ virtualenv.pyc
 flask/
 views.pyc
 __init__.pyc
+app/forms.pyc
+config.pyc

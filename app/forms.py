@@ -1,0 +1,11 @@
+__author__ = 'kirill'
+
+from flask_wtf import Form
+from wtforms import TextField, BooleanField
+from wtforms.validators import Required
+
+class LoginForm(Form):
+    openid = TextField('openid', validators=[Required()])
+    remember = BooleanField('remember', default=False)
+
+
