@@ -6,3 +6,8 @@ views.pyc
 __init__.pyc
 app/forms.pyc
 config.pyc
+db_repository/*
+*.pyc
+app.db
+imp
+os.path
