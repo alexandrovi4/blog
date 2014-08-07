@@ -7,8 +7,9 @@ from models import User, ROLE_USER, ROLE_ADMIN
 
 @app.route('/')
 @app.route('/index')
+@login_required
 def index():
-    user = {'nick': 'Xy9se'} # fake
+    user = g.user
     posts = [
         {
             'author': {'nickname':'John'},
@@ -62,4 +63,13 @@ def after_login(resp):
 @lm.user_loader
 def load_user(id):
     return User.query.get(int(id))
+
+@app.before_request
+def before_request():
+    g.user = current_user
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
 
