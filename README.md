@@ -1,4 +1,4 @@
 blog
 ====
 
-this is simple blog on python and flask
+Simple blog based on Django and Twitter Bootrstap, with Disqus.
